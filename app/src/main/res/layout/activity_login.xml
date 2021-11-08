@@ -9,12 +9,12 @@
     <FrameLayout
         android:id="@+id/b"
         android:layout_width="match_parent"
-        android:layout_height="173dp"
+        android:layout_height="223dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
-        android:background="#457DD9" >
+        android:background="@drawable/back" >
 
     </FrameLayout>
 
@@ -22,7 +22,7 @@
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/logo" />
 
     <LinearLayout
@@ -42,7 +42,7 @@
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:layout_marginLeft="40dp"
@@ -54,7 +54,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:hint="Email"
                 >
 
@@ -82,22 +82,43 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/btn_login"
-                android:layout_marginTop="30dp"
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="40dp"
+                android:layout_height="55dp"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Login" />
+                android:text="BUTTON"
+                app:cornerRadius="8dp"
+                android:backgroundTint="#457DD9"
+                />
 
-            <Button
-                android:id="@+id/btn_registerNow"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New user? Register Now"
-                android:textSize="12dp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="#457DD9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New User ?"
+                    android:textSize="12dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btn_registerNow"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register Now"
+                    android:textSize="11dp"
+                    android:textColor="#457DD9"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
+
 
     </LinearLayout>
 
