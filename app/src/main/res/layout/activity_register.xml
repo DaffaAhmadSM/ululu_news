@@ -54,6 +54,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/tf_username"
                 android:layout_marginBottom="20dp"
                 android:hint="Username"
                 >
@@ -117,6 +118,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_marginTop="20dp"
                 android:layout_height="55dp"
+                android:id="@+id/btn_register"
                 android:layout_width="match_parent"
                 android:text="Register"
                 app:cornerRadius="8dp"

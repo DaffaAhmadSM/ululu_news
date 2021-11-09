@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +8,104 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ULULU NEWS"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#457DD9"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/sport_cv"
+        android:layout_width="170dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:src="@drawable/sports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:background="#457DD9"
+            android:gravity="center"
+            android:text="SPORT"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="start"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/health_cv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/sport_cv"
+        android:layout_width="170dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:src="@drawable/healthcare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:background="#457DD9"
+            android:gravity="center"
+            android:text="HEALTH"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="start"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/technology_cv"
+        android:layout_below="@id/health_cv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:src="@drawable/smartphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:background="#457DD9"
+            android:gravity="center"
+            android:text="TECHNOLOGY"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="start"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/business_cv"
+        android:layout_below="@id/sport_cv"
+        android:layout_toRightOf="@id/technology_cv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:src="@drawable/bisnis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:background="#457DD9"
+            android:gravity="center"
+            android:text="BUSSINESS"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="start"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
