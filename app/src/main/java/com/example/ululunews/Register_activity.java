@@ -22,4 +22,5 @@ public class Register_activity extends AppCompatActivity {
         btn_register = findViewById(R.id.btn_register);
 
     }
+
 }
