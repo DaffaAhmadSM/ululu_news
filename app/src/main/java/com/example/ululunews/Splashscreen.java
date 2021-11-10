@@ -21,4 +21,5 @@ public class Splashscreen extends AppCompatActivity {
             }
         }, 5000);
     }
+
 }
