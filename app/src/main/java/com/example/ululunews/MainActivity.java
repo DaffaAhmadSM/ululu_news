@@ -1,6 +1,5 @@
 package com.example.ululunews;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -8,17 +7,13 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private CardView cardView;
-    private BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,24 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         health_cv.setOnClickListener(this);
         technology_cv.setOnClickListener(this);
         business_cv.setOnClickListener(this);
-        bottomNavigationView = (bottomNavigationView) = findViewById(R.id.bottom);
-        bottomNavigationView.setSelectedItemId(R.id.Home);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.profile:
-                        startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.favorite:
-                        startActivity(new Intent(getApplicationContext(),Favoriteactivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-                return false;
-            }
-        });
+
     }
 
     @Override
@@ -76,8 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent4);
                 Toast.makeText(this, "bussiness berhasil diklik", Toast.LENGTH_SHORT).show();
                 break;
-
         }
     }
-
 }

@@ -40,7 +40,7 @@ public class TechnologyActivity extends AppCompatActivity {
         modelnya = new ArrayList<>();
         AndroidNetworking.get("https://newsapi.org/v2/top-headlines")
                 .addQueryParameter("country","id")
-                .addQueryParameter("category","technology")
+                .addQueryParameter("category","Techno")
                 .addQueryParameter("apiKey","39acf3d942ab41949db543417876bdcf")
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
@@ -55,14 +55,14 @@ public class TechnologyActivity extends AppCompatActivity {
                                 deskripsi = resultObj.getString("description");
                                 gambar = resultObj.getString("urlToImage");
                                 sumber = resultObj.getString("publishedAt");
-                                modelnya.add(new Model(i,judul, deskripsi, sumber, gambar));
+                                modelnya.add(new Model(judul, deskripsi, sumber, gambar));
                             }
 
                             main = new MainAdapter(TechnologyActivity.this, modelnya, new MainAdapter.Callback() {
                                 @Override
                                 public void call(int v) {
                                     Model Operator = modelnya.get(v);
-                                    Intent move = new Intent(getApplicationContext(), DetailActivity.class);
+                                    Intent move = new Intent(getApplicationContext(), MainActivity.class);
                                     move.putExtra("deskripsi", Operator.getDeskripsi());
                                     move.putExtra("sumber", Operator.getSumber());
                                     move.putExtra("judul", Operator.getJudul());
@@ -80,10 +80,10 @@ public class TechnologyActivity extends AppCompatActivity {
                         }
                     }
 
-
                     @Override
                     public void onError(ANError anError) {
-                         Toast.makeText(getApplicationContext(), "Something error", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Something error", Toast.LENGTH_SHORT).show();
+
                     }
 
                 });
