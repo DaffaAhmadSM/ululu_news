@@ -23,6 +23,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
         this.context = context;
         this.model = model;
         this.callback = callback;
+
     }
 
     @NonNull
