@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">UluluNews</string>
     <string name="link">Baca <a href="http://www.Cnbcindonesia.com/sports">SELENGKAPNYA</a> disini </string>
+    <string name="api_service">https://ululu-news.herokuapp.com/api/</string>
 </resources>
