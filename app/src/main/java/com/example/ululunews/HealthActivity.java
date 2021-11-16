@@ -35,7 +35,6 @@ public class HealthActivity extends AppCompatActivity {
         AndroidNetworking.initialize(getApplicationContext());
         data();
     }
-
     private void data() {
         modelnya = new ArrayList<>();
         AndroidNetworking.get("https://newsapi.org/v2/top-headlines")
@@ -55,7 +54,7 @@ public class HealthActivity extends AppCompatActivity {
                                 deskripsi = resultObj.getString("description");
                                 gambar = resultObj.getString("urlToImage");
                                 sumber = resultObj.getString("publishedAt");
-                                modelnya.add(new Model(judul, deskripsi, sumber, gambar));
+                                modelnya.add(new Model(i,judul, deskripsi, sumber, gambar));
                             }
 
                             main = new MainAdapter(HealthActivity.this, modelnya, new MainAdapter.Callback() {

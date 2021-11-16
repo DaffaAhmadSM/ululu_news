@@ -1,8 +1,28 @@
 package com.example.ululunews;
 
-public class Model {
-    private String judul, deskripsi, sumber, gambar;
-    public Model(String judul, String deskripsi, String sumber, String gambar) {
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
+public class Model extends RealmObject {
+    @PrimaryKey
+    private Integer id;
+    private String judul;
+    private String deskripsi;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    private String sumber;
+    private String gambar;
+    public  Model(){
+
+    }
+    public Model(Integer id, String judul, String deskripsi, String sumber, String gambar) {
         this.judul = judul;
         this.deskripsi = deskripsi;
         this.sumber = sumber;

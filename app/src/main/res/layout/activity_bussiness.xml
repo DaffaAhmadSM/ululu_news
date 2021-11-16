@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SportActivity">
-
-
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/bottom"
         android:id="@+id/business_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

@@ -15,7 +15,7 @@
         android:textSize="35dp"
         android:textStyle="bold"
         android:gravity="center"
-        android:background="#457DD9"/>
+        android:background="#6595E3"/>
 
 
     <androidx.cardview.widget.CardView
@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:background="#457DD9"
+            android:background="#6595E3"
             android:gravity="center"
             android:text="SPORT"
             android:textStyle="bold"
@@ -53,7 +53,7 @@
         <TextView
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:background="#457DD9"
+            android:background="#6495ED"
             android:gravity="center"
             android:text="HEALTH"
             android:textStyle="bold"
@@ -75,7 +75,7 @@
         <TextView
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:background="#457DD9"
+            android:background="#6495ED"
             android:gravity="center"
             android:text="TECHNOLOGY"
             android:textStyle="bold"
@@ -98,7 +98,7 @@
         <TextView
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:background="#457DD9"
+            android:background="#6495ED"
             android:gravity="center"
             android:text="BUSSINESS"
             android:textStyle="bold"
@@ -106,6 +106,13 @@
             android:textColor="@color/white"
             android:layout_gravity="start"/>
     </androidx.cardview.widget.CardView>
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:labelVisibilityMode="unlabeled"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        app:menu="@menu/menu_item"
+        android:background="#6595E3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
 
 </RelativeLayout>
