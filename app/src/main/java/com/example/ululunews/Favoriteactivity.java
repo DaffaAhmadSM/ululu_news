@@ -37,6 +37,7 @@ public class Favoriteactivity extends AppCompatActivity {
         RealmHelper realmHelper = new RealmHelper(realm);
         model = new ArrayList<>();
 
+
         model = realmHelper.getAllNews();
         bottomNavigationView = (bottomNavigationView) = findViewById(R.id.bottom_navigation_favorite);
         bottomNavigationView.setSelectedItemId(R.id.favorite);

@@ -34,6 +34,7 @@ public class HealthActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         AndroidNetworking.initialize(getApplicationContext());
         data();
+
     }
     private void data() {
         modelnya = new ArrayList<>();

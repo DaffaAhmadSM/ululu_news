@@ -4,6 +4,7 @@ import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
 public class Model extends RealmObject {
+
     @PrimaryKey
     private Integer id;
     private String judul;

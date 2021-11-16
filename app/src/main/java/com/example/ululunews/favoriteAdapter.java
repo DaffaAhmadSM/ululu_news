@@ -77,6 +77,7 @@ public class favoriteAdapter extends RecyclerView.Adapter<favoriteAdapter.ViewHo
             image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) { callback.onClick(getAdapterPosition()); }
+
             });
         }
         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {

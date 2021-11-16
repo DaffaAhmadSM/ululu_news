@@ -31,6 +31,7 @@ public class DetailActivity extends AppCompatActivity {
         btn = findViewById(R.id.btn_favorite);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         bundle();
+
     }
 
     private void bundle() {

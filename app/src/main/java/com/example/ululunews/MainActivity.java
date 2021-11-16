@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent4);
                 Toast.makeText(this, "bussiness berhasil diklik", Toast.LENGTH_SHORT).show();
                 break;
+
         }
     }
 

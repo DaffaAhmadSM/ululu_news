@@ -33,6 +33,7 @@ public class BussinessActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         AndroidNetworking.initialize(getApplicationContext());
         data();
+
     }
 
     private void data() {

@@ -80,10 +80,10 @@ public class TechnologyActivity extends AppCompatActivity {
                         }
                     }
 
+
                     @Override
                     public void onError(ANError anError) {
-                        Toast.makeText(getApplicationContext(), "Something error", Toast.LENGTH_SHORT).show();
-
+                         Toast.makeText(getApplicationContext(), "Something error", Toast.LENGTH_SHORT).show();
                     }
 
                 });
