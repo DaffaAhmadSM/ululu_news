@@ -36,6 +36,7 @@ public class SportActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         AndroidNetworking.initialize(getApplicationContext());
         data();
+
     }
 
     private void data() {
@@ -57,7 +58,7 @@ public class SportActivity extends AppCompatActivity {
                                 deskripsi = resultObj.getString("description");
                                 gambar = resultObj.getString("urlToImage");
                                 sumber = resultObj.getString("publishedAt");
-                                modelnya.add(new Model(judul, deskripsi, sumber, gambar));
+                                modelnya.add(new Model(i,judul, deskripsi, sumber, gambar));
                             }
 
                             main = new MainAdapter(SportActivity.this, modelnya, new MainAdapter.Callback() {

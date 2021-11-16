@@ -33,6 +33,7 @@ public class BussinessActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         AndroidNetworking.initialize(getApplicationContext());
         data();
+
     }
 
     private void data() {
@@ -54,7 +55,7 @@ public class BussinessActivity extends AppCompatActivity {
                                 deskripsi = resultObj.getString("description");
                                 gambar = resultObj.getString("urlToImage");
                                 sumber = resultObj.getString("publishedAt");
-                                modelnya.add(new Model(judul, deskripsi, sumber, gambar));
+                                modelnya.add(new Model(i,judul, deskripsi, sumber, gambar));
                             }
 
                             main = new MainAdapter(BussinessActivity.this, modelnya, new MainAdapter.Callback() {
