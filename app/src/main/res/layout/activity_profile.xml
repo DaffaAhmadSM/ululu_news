@@ -11,11 +11,12 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher_round"
+        android:src="@drawable/dummy_profileimage"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         />
     <TextView
+        android:id="@+id/pf_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nama"
@@ -26,6 +27,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"/>
     <TextView
+        android:id="@+id/profileemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email"
@@ -50,6 +52,37 @@
         android:drawableLeft="@drawable/setting_icon"
         android:drawableRight="@drawable/arrow"
 
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="30dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Help &amp; Support"
+        android:fontFamily="@font/latoregular"
+        android:textAllCaps="false"
+        app:cornerRadius="30dp"
+        android:textAlignment="textStart"
+        android:backgroundTint="#457DD9"
+        tools:ignore="RtlCompat"
+        android:drawableLeft="@drawable/help_icon"
+        android:drawableRight="@drawable/arrow"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="30dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Logout"
+        android:fontFamily="@font/latoregular"
+        android:textAllCaps="false"
+        app:cornerRadius="30dp"
+        android:textAlignment="textStart"
+        android:backgroundTint="#457DD9"
+        tools:ignore="RtlCompat"
+        android:drawableLeft="@drawable/logout"
+        android:drawableRight="@drawable/arrow"
 
         />
 
