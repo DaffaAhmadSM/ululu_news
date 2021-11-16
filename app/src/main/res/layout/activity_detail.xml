@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/kecempung"
+            android:id="@+id/imgdetail">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:text="5 cara sehat selain salto dan kayang"
+            android:layout_below="@+id/imgdetail"
+            android:id="@+id/juduldetail">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMBER"
+            android:id="@+id/sourcedetail"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/juduldetail"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:textColor="@color/black"
+            android:text="Ini deskripsi"
+            android:id="@+id/deskripsidetail"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/sourcedetail">
+        </TextView>
+
+        <TextView
+            android:id="@+id/linkselengkapnya"
+            android:layout_width="match_parent"
+            android:text="@string/link"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsidetail">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</ScrollView>
