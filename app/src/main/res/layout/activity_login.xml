@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/b"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -38,32 +38,29 @@
             android:layout_height="match_parent"
             android:text="Sign In"
             android:textSize="25sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
             android:layout_marginRight="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:hint="Email"
-                >
+                android:hint="Email">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tf_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:background="@drawable/box" />
+                    android:background="@drawable/box"
+                    android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,20 +74,19 @@
                     android:id="@+id/tf_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:background="@drawable/box"/>
+                    android:background="@drawable/box"
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_login"
-                android:layout_marginTop="40dp"
-                android:layout_height="55dp"
                 android:layout_width="match_parent"
-                android:text="BUTTON"
-                app:cornerRadius="8dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="#457DD9"
-                />
+                android:text="LOGIN"
+                app:cornerRadius="8dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -98,12 +94,12 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:textColor="#457DD9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="New User ?"
+                    android:textColor="#457DD9"
                     android:textSize="12dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn_registerNow"
@@ -111,9 +107,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Register Now"
-                    android:textSize="11dp"
                     android:textColor="#457DD9"
-                    android:textStyle="bold"/>
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
