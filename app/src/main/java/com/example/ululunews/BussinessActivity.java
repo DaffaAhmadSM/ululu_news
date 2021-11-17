@@ -53,7 +53,7 @@ public class BussinessActivity extends AppCompatActivity {
                                 judul = resultObj.getString("title");
                                 deskripsi = resultObj.getString("description");
                                 gambar = resultObj.getString("urlToImage");
-                                sumber = resultObj.getString("publishedAt");
+                                sumber = resultObj.getString("description");
                                 modelnya.add(new Model(judul, deskripsi, sumber, gambar));
                             }
 

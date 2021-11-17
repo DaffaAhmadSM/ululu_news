@@ -26,6 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText et_email, et_password;
     Button btn_register, btn_login;
     String email, password;
+    static String token;
     LocalStorage localStorage;
 
     @Override
@@ -73,9 +74,8 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            String token = response.getString("token");
+                            token = response.getString("token");
                             String log = response.getString("log");
-                            System.out.println(token);
                             if ("true".equals(log)){
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);

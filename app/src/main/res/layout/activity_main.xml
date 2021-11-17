@@ -107,5 +107,17 @@
             android:layout_gravity="start"/>
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:text="Profile"
+        android:textAllCaps="false"
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginBottom="97dp" />
+
 
 </RelativeLayout>

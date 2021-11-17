@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import butterknife.ButterKnife;
@@ -23,11 +24,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CardView health_cv = findViewById(R.id.health_cv);
         CardView technology_cv = findViewById(R.id.technology_cv);
         CardView business_cv = findViewById(R.id.business_cv);
+        Button profile = findViewById(R.id.profil);
 
         sport_cv.setOnClickListener(this);
         health_cv.setOnClickListener(this);
         technology_cv.setOnClickListener(this);
         business_cv.setOnClickListener(this);
+        profile.setOnClickListener(this);
 
     }
 
@@ -54,6 +57,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent4);
                 Toast.makeText(this, "bussiness berhasil diklik", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.profil:
+                Intent intent5 = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent5);
+                Toast.makeText(this, "Profile berhasil diklik", Toast.LENGTH_SHORT).show();
+                break;
+
         }
     }
 }
